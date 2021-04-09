@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class LoginScreenStrings {
+class StringsClass {
   /// Massages:
   static final String welcomeMassage1 = 'Welcome';
   static final String welcomeMassage2 = 'Back!';

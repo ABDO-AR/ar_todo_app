@@ -1,14 +1,13 @@
 import 'package:ar_todo_app/res/screens/login_screen_res/login_constance.dart';
-import 'package:ar_todo_app/res/strings/login_screen_strings/login_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ar_todo_app/res/values/color_class.dart';
 
-class ARLoginTextField extends StatelessWidget {
+class ARCustomTextField extends StatelessWidget {
   final String text;
   final bool obscureText;
   final Function(String) onChange;
 
-  ARLoginTextField({
+  ARCustomTextField({
     this.text,
     this.onChange,
     this.obscureText,
