@@ -1,4 +1,4 @@
-import 'package:ar_todo_app/res/screens/login_screen_res/login_constance.dart';
+import 'package:ar_todo_app/res/values/constance_class.dart';
 import 'package:flutter/material.dart';
 import 'package:ar_todo_app/res/values/color_class.dart';
 
@@ -21,14 +21,14 @@ class ARCustomTextField extends StatelessWidget {
       cursorColor: ColorClass.loginScreenYellowColor,
       decoration: InputDecoration(
         labelText: text,
-        labelStyle: LoginScreenConstance.textFilledLabelTextStyle,
+        labelStyle: ConstanceClass.textFilledLabelTextStyle,
         fillColor: ColorClass.loginScreenYellowColor,
         focusColor: ColorClass.loginScreenYellowColor,
         hoverColor: ColorClass.loginScreenYellowColor,
-        focusedBorder: LoginScreenConstance.textFilledBorder(
+        focusedBorder: ConstanceClass.textFilledBorder(
           ColorClass.loginScreenYellowColor,
         ),
-        enabledBorder: LoginScreenConstance.textFilledBorder(
+        enabledBorder: ConstanceClass.textFilledBorder(
           Colors.grey,
         ),
       ),

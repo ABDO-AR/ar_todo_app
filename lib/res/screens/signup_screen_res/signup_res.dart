@@ -1,7 +1,5 @@
-import 'package:ar_todo_app/res/screens/home_screen_res/home_res.dart';
-import 'package:ar_todo_app/res/screens/login_screen_res/login_res.dart';
-import 'package:ar_todo_app/res/screens/signup_screen_res/signup_constance.dart';
 import 'package:ar_todo_app/res/values/color_class.dart';
+import 'package:ar_todo_app/res/values/constance_class.dart';
 import 'package:ar_todo_app/res/values/strings_class.dart';
 import 'package:ar_todo_app/res/values/values_class.dart';
 import 'package:ar_todo_app/res/widgets/ar_custom_text_field.dart';
@@ -54,11 +52,11 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                     children: [
                       Text(
                         StringsClass.welcomeSignupMassage1,
-                        style: SignupScreenConstance.welcomeMassageTextStyle,
+                        style: ConstanceClass.welcomeMassageTextStyle,
                       ),
                       Text(
                         StringsClass.welcomeSignupMassage2,
-                        style: SignupScreenConstance.welcomeMassageTextStyle,
+                        style: ConstanceClass.welcomeMassageTextStyle,
                       ),
                     ],
                   ),
@@ -112,7 +110,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                   },
                   child: Text(
                     StringsClass.loginMassage,
-                    style: SignupScreenConstance.signupMassageTextStyle,
+                    style: ConstanceClass.signupMassageTextStyle,
                   ),
                 ),
 
@@ -123,7 +121,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                   child: TextButton(
                     style: TextButton.styleFrom(
                       backgroundColor: ColorClass.loginScreenYellowColor,
-                      shape: SignupScreenConstance.loginButtonShape,
+                      shape: ConstanceClass.loginButtonShape,
                     ),
                     onPressed: () {
                       ValuesClass.getSignupScreenDev(context, false)
@@ -131,7 +129,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                     },
                     child: Text(
                       StringsClass.signupMassage,
-                      style: SignupScreenConstance.loginMassageTextStyle,
+                      style: ConstanceClass.loginMassageTextStyle,
                     ),
                   ),
                 ),
