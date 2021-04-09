@@ -34,7 +34,7 @@ class _HomeScreenResState extends State<HomeScreenRes> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('${Values.getHomeScreenDev(context, true).testCounter}'),
+            Text('${Values.getHomeScreenDev(context, true).getCounter}'),
             SizedBox(height: 10.0),
             TextButton(
               onPressed: () {
