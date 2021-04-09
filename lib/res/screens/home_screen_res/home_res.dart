@@ -13,6 +13,7 @@ class HomeScreenRes extends StatefulWidget {
 class _HomeScreenResState extends State<HomeScreenRes> {
   @override
   void initState() {
+    /// Change The Colors To Be More Good With Home Screen:
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.transparent,
@@ -49,20 +50,7 @@ class _HomeScreenResState extends State<HomeScreenRes> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text('${ValuesClass.getHomeScreenDev(context, true).getCounter}'),
-            SizedBox(height: 10.0),
-            TextButton(
-              onPressed: () {
-                ValuesClass.getHomeScreenDev(context, false).addCounter();
-              },
-              child: Icon(
-                Icons.add,
-                size: 60.0,
-                color: Colors.blue,
-              ),
-            ),
-          ],
+          children: [],
         ),
       ),
     );
