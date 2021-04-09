@@ -116,7 +116,7 @@ class _LoginScreenResState extends State<LoginScreenRes> {
                           .loginButton(context);
                     },
                     child: Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.all(2.0),
                       child: Text(
                         StringsClass.loginMassage,
                         style: ConstanceClass.loginMassageTextStyle,

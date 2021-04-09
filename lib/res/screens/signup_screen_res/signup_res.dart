@@ -128,7 +128,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                           .signupButton(context);
                     },
                     child: Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.all(2.0),
                       child: Text(
                         StringsClass.signupMassage,
                         style: ConstanceClass.loginMassageTextStyle,
