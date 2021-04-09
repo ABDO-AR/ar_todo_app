@@ -65,11 +65,13 @@ class _LoginScreenResState extends State<LoginScreenRes> {
             SizedBox(height: size.height / 3),
             ARLoginTextField(
               text: LoginScreenStrings.userNameHint,
+              obscureText: false,
               onChange: (String value) {},
             ),
             SizedBox(height: 10.0),
             ARLoginTextField(
               text: LoginScreenStrings.passwordHint,
+              obscureText: true,
               onChange: (String value) {},
             ),
             SizedBox(height: size.height / 4.3),

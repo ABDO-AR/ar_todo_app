@@ -5,16 +5,19 @@ import 'package:ar_todo_app/res/values/color_class.dart';
 
 class ARLoginTextField extends StatelessWidget {
   final String text;
+  final bool obscureText;
   final Function(String) onChange;
 
   ARLoginTextField({
     this.text,
     this.onChange,
+    this.obscureText,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: obscureText,
       onChanged: onChange,
       cursorColor: ColorClass.loginScreenYellowColor,
       decoration: InputDecoration(
