@@ -115,9 +115,12 @@ class _LoginScreenResState extends State<LoginScreenRes> {
                       ValuesClass.getLoginScreenDev(context, false)
                           .loginButton(context);
                     },
-                    child: Text(
-                      StringsClass.loginMassage,
-                      style: ConstanceClass.loginMassageTextStyle,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text(
+                        StringsClass.loginMassage,
+                        style: ConstanceClass.loginMassageTextStyle,
+                      ),
                     ),
                   ),
                 ),

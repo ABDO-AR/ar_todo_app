@@ -127,9 +127,12 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                       ValuesClass.getSignupScreenDev(context, false)
                           .signupButton(context);
                     },
-                    child: Text(
-                      StringsClass.signupMassage,
-                      style: ConstanceClass.loginMassageTextStyle,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text(
+                        StringsClass.signupMassage,
+                        style: ConstanceClass.loginMassageTextStyle,
+                      ),
                     ),
                   ),
                 ),
