@@ -1,7 +1,9 @@
 import 'package:ar_todo_app/dev/home_screen_dev/home_dev.dart';
 import 'package:ar_todo_app/dev/login_screen_dev/login_dev.dart';
+import 'package:ar_todo_app/dev/signup_screen_dev/signup_dev.dart';
 import 'package:ar_todo_app/res/screens/home_screen_res/home_res.dart';
 import 'package:ar_todo_app/res/screens/login_screen_res/login_res.dart';
+import 'package:ar_todo_app/res/screens/signup_screen_res/signup_res.dart';
 import 'package:ar_todo_app/res/values/color_class.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +15,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => HomeScreenDev()),
         ChangeNotifierProvider(create: (_) => LoginScreenDev()),
+        ChangeNotifierProvider(create: (_) => SignupScreenDev()),
       ],
       child: ARTODOAPP(),
     ),
@@ -43,6 +46,7 @@ class ARTODOAPP extends StatelessWidget {
       routes: {
         HomeScreenRes.id: (context) => HomeScreenRes(),
         LoginScreenRes.id: (context) => LoginScreenRes(),
+        SignupScreenRes.id: (context) => SignupScreenRes(),
       },
     );
   }

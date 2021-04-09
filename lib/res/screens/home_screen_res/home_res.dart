@@ -1,5 +1,6 @@
 import 'package:ar_todo_app/res/values/values_class.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class HomeScreenRes extends StatefulWidget {
   static const String id = 'HomeScreenRes_ID';
@@ -10,6 +11,21 @@ class HomeScreenRes extends StatefulWidget {
 }
 
 class _HomeScreenResState extends State<HomeScreenRes> {
+  @override
+  void initState() {
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle.dark.copyWith(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarDividerColor: Color(0xFF222222),
+        systemNavigationBarColor: Color(0xFF222222),
+        systemNavigationBarIconBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: Brightness.dark,
+      ),
+    );
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
