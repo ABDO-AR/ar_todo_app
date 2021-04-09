@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ConstanceClass{
+class ConstanceClass {
   static final TextStyle welcomeMassageTextStyle = TextStyle().copyWith(
     fontSize: 30.0,
     fontWeight: FontWeight.w700,
@@ -30,7 +30,7 @@ class ConstanceClass{
   );
 
   static OutlineInputBorder textFilledBorder(Color color) => OutlineInputBorder(
-    borderRadius: BorderRadius.circular(1000),
-    borderSide: BorderSide(width: 1.0, color: color),
-  );
+        borderRadius: BorderRadius.circular(1000),
+        borderSide: BorderSide(width: 1.0, color: color),
+      );
 }
