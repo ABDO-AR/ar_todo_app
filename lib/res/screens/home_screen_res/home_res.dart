@@ -34,11 +34,11 @@ class _HomeScreenResState extends State<HomeScreenRes> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('${Values.getHomeScreenDev(context, true).getCounter}'),
+            Text('${ValuesClass.getHomeScreenDev(context, true).getCounter}'),
             SizedBox(height: 10.0),
             TextButton(
               onPressed: () {
-                Values.getHomeScreenDev(context, false).addCounter();
+                ValuesClass.getHomeScreenDev(context, false).addCounter();
               },
               child: Icon(
                 Icons.add,
