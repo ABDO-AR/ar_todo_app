@@ -1,5 +1,6 @@
 import 'package:ar_todo_app/res/values/colors_class.dart';
 import 'package:ar_todo_app/res/values/values_class.dart';
+import 'package:ar_todo_app/res/widgets/ar_custom_fab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -60,6 +61,10 @@ class _HomeScreenResState extends State<HomeScreenRes> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [],
         ),
+      ),
+
+      floatingActionButton: ARCustomFAB(
+        onPressed: () {},
       ),
     );
   }

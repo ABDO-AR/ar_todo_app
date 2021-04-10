@@ -18,6 +18,9 @@ class ColorsClass {
   static final Color checkBoxDividerColor2 = Color(0xFFEB06FF);
   static final Color checkBoxDividerColor3 = Color(0xFFBF09DC);
 
+  /// For FAButton Color:
+  static final Color floatingActionButtonColor = Color(0xFFEB06FF);
+
   /// Task Card Color:
   static final Color taskCardColor = Color(0xFF041955);
 }

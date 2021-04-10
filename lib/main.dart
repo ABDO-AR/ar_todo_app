@@ -27,18 +27,22 @@ class ARTODOAPP extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    /// Set The System States, Navigation Bar Color
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle.dark.copyWith(
-        statusBarColor: Colors.transparent,
-        systemNavigationBarDividerColor:
-            ColorsClass.mainLoginScreenBackgroundColor,
-        systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
-        systemNavigationBarIconBrightness: Brightness.dark,
-        statusBarIconBrightness: Brightness.dark,
-        statusBarBrightness: Brightness.dark,
-      ),
-    );
+    /// Set The System States, Navigation Bar Color.
+    /// This If Statement Because He Is Downing Problems In Windows & Web.
+    // ignore: unrelated_type_equality_checks
+    if (TargetPlatform.android == true || TargetPlatform.iOS == true) {
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle.dark.copyWith(
+          statusBarColor: Colors.transparent,
+          systemNavigationBarDividerColor:
+              ColorsClass.mainLoginScreenBackgroundColor,
+          systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
+          systemNavigationBarIconBrightness: Brightness.dark,
+          statusBarIconBrightness: Brightness.dark,
+          statusBarBrightness: Brightness.dark,
+        ),
+      );
+    }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ARTODOAPP',
