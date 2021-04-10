@@ -34,7 +34,6 @@ class _HomeScreenResState extends State<HomeScreenRes> {
     Size size = MediaQuery.of(context).size;
     ThemeData themeData = Theme.of(context);
     return Scaffold(
-
       /// TODO: We Have To Make Custom AppBar With Preferred Size.
       //AppBar:
       // appBar: AppBar(
