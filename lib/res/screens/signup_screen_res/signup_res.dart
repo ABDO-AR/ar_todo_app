@@ -1,4 +1,4 @@
-import 'package:ar_todo_app/res/values/color_class.dart';
+import 'package:ar_todo_app/res/values/colors_class.dart';
 import 'package:ar_todo_app/res/values/constance_class.dart';
 import 'package:ar_todo_app/res/values/strings_class.dart';
 import 'package:ar_todo_app/res/values/values_class.dart';
@@ -120,7 +120,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                   width: 160.0,
                   child: TextButton(
                     style: TextButton.styleFrom(
-                      backgroundColor: ColorClass.mainLoginScreenWidgetsColor,
+                      backgroundColor: ColorsClass.mainLoginScreenWidgetsColor,
                       shape: ConstanceClass.loginButtonShape,
                     ),
                     onPressed: () {

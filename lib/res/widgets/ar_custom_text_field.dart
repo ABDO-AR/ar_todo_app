@@ -1,6 +1,6 @@
 import 'package:ar_todo_app/res/values/constance_class.dart';
 import 'package:flutter/material.dart';
-import 'package:ar_todo_app/res/values/color_class.dart';
+import 'package:ar_todo_app/res/values/colors_class.dart';
 
 class ARCustomTextField extends StatelessWidget {
   final String text;
@@ -18,15 +18,15 @@ class ARCustomTextField extends StatelessWidget {
     return TextField(
       obscureText: obscureText,
       onChanged: onChange,
-      cursorColor: ColorClass.mainLoginScreenWidgetsColor,
+      cursorColor: ColorsClass.mainLoginScreenWidgetsColor,
       decoration: InputDecoration(
         labelText: text,
         labelStyle: ConstanceClass.textFilledLabelTextStyle,
-        fillColor: ColorClass.mainLoginScreenWidgetsColor,
-        focusColor: ColorClass.mainLoginScreenWidgetsColor,
-        hoverColor: ColorClass.mainLoginScreenWidgetsColor,
+        fillColor: ColorsClass.mainLoginScreenWidgetsColor,
+        focusColor: ColorsClass.mainLoginScreenWidgetsColor,
+        hoverColor: ColorsClass.mainLoginScreenWidgetsColor,
         focusedBorder: ConstanceClass.textFilledBorder(
-          ColorClass.mainLoginScreenWidgetsColor,
+          ColorsClass.mainLoginScreenWidgetsColor,
         ),
         enabledBorder: ConstanceClass.textFilledBorder(
           Colors.grey,

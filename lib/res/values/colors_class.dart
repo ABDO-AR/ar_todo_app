@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ColorClass {
+class ColorsClass {
   /// Main For Login Screen Colors:
   static final Color mainLoginScreenWidgetsColor = Color(0xFF3450A1);
   static final Color mainLoginScreenBackgroundColor = Color(0xFF041955);

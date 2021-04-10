@@ -4,7 +4,7 @@ import 'package:ar_todo_app/dev/signup_screen_dev/signup_dev.dart';
 import 'package:ar_todo_app/res/screens/home_screen_res/home_res.dart';
 import 'package:ar_todo_app/res/screens/login_screen_res/login_res.dart';
 import 'package:ar_todo_app/res/screens/signup_screen_res/signup_res.dart';
-import 'package:ar_todo_app/res/values/color_class.dart';
+import 'package:ar_todo_app/res/values/colors_class.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -32,8 +32,8 @@ class ARTODOAPP extends StatelessWidget {
       SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.transparent,
         systemNavigationBarDividerColor:
-            ColorClass.mainLoginScreenBackgroundColor,
-        systemNavigationBarColor: ColorClass.mainLoginScreenBackgroundColor,
+            ColorsClass.mainLoginScreenBackgroundColor,
+        systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
         systemNavigationBarIconBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark,
         statusBarBrightness: Brightness.dark,

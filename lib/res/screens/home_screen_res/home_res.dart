@@ -1,3 +1,4 @@
+import 'package:ar_todo_app/res/values/colors_class.dart';
 import 'package:ar_todo_app/res/values/values_class.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -17,8 +18,9 @@ class _HomeScreenResState extends State<HomeScreenRes> {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.transparent,
-        systemNavigationBarDividerColor: Color(0xFF222222),
-        systemNavigationBarColor: Color(0xFF222222),
+        systemNavigationBarDividerColor:
+            ColorsClass.mainHomeScreenBackgroundColor,
+        systemNavigationBarColor: ColorsClass.mainHomeScreenBackgroundColor,
         systemNavigationBarIconBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark,
         statusBarBrightness: Brightness.dark,
@@ -32,11 +34,14 @@ class _HomeScreenResState extends State<HomeScreenRes> {
     Size size = MediaQuery.of(context).size;
     ThemeData themeData = Theme.of(context);
     return Scaffold(
+
+      /// TODO: We Have To Make Custom AppBar With Preferred Size.
       //AppBar:
-      appBar: AppBar(
-        title: Text('HomeScreen'),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text('HomeScreen'),
+      //   backgroundColor: ColorsClass.mainHomeScreenBackgroundColor,
+      //   centerTitle: true,
+      // ),
 
       //Body:
       body: Container(
@@ -45,6 +50,10 @@ class _HomeScreenResState extends State<HomeScreenRes> {
         height: size.height,
 
         padding: EdgeInsets.all(8.0),
+
+        decoration: BoxDecoration(
+          color: ColorsClass.mainHomeScreenBackgroundColor,
+        ),
 
         //Child:
         child: Column(
