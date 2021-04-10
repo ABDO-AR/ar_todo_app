@@ -18,15 +18,15 @@ class ARCustomTextField extends StatelessWidget {
     return TextField(
       obscureText: obscureText,
       onChanged: onChange,
-      cursorColor: ColorClass.loginScreenYellowColor,
+      cursorColor: ColorClass.mainLoginScreenWidgetsColor,
       decoration: InputDecoration(
         labelText: text,
         labelStyle: ConstanceClass.textFilledLabelTextStyle,
-        fillColor: ColorClass.loginScreenYellowColor,
-        focusColor: ColorClass.loginScreenYellowColor,
-        hoverColor: ColorClass.loginScreenYellowColor,
+        fillColor: ColorClass.mainLoginScreenWidgetsColor,
+        focusColor: ColorClass.mainLoginScreenWidgetsColor,
+        hoverColor: ColorClass.mainLoginScreenWidgetsColor,
         focusedBorder: ConstanceClass.textFilledBorder(
-          ColorClass.loginScreenYellowColor,
+          ColorClass.mainLoginScreenWidgetsColor,
         ),
         enabledBorder: ConstanceClass.textFilledBorder(
           Colors.grey,

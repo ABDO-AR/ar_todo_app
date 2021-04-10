@@ -120,7 +120,7 @@ class _SignupScreenResState extends State<SignupScreenRes> {
                   width: 160.0,
                   child: TextButton(
                     style: TextButton.styleFrom(
-                      backgroundColor: ColorClass.loginScreenYellowColor,
+                      backgroundColor: ColorClass.mainLoginScreenWidgetsColor,
                       shape: ConstanceClass.loginButtonShape,
                     ),
                     onPressed: () {

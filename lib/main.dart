@@ -31,8 +31,9 @@ class ARTODOAPP extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.transparent,
-        systemNavigationBarDividerColor: ColorClass.loginScreenBlueDarkColor,
-        systemNavigationBarColor: ColorClass.loginScreenBlueDarkColor,
+        systemNavigationBarDividerColor:
+            ColorClass.mainLoginScreenBackgroundColor,
+        systemNavigationBarColor: ColorClass.mainLoginScreenBackgroundColor,
         systemNavigationBarIconBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark,
         statusBarBrightness: Brightness.dark,
