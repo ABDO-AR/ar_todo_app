@@ -30,19 +30,30 @@ class ARTODOAPP extends StatelessWidget {
     /// Set The System States, Navigation Bar Color.
     /// This If Statement Because He Is Downing Problems In Windows & Web.
     // ignore: unrelated_type_equality_checks
-    if (TargetPlatform.android == true || TargetPlatform.iOS == true) {
-      SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle.dark.copyWith(
-          statusBarColor: Colors.transparent,
-          systemNavigationBarDividerColor:
-              ColorsClass.mainLoginScreenBackgroundColor,
-          systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
-          systemNavigationBarIconBrightness: Brightness.dark,
-          statusBarIconBrightness: Brightness.dark,
-          statusBarBrightness: Brightness.dark,
-        ),
-      );
-    }
+    // if (TargetPlatform.android == true || TargetPlatform.iOS == true) {
+    //   SystemChrome.setSystemUIOverlayStyle(
+    //     SystemUiOverlayStyle.dark.copyWith(
+    //       statusBarColor: Colors.transparent,
+    //       systemNavigationBarDividerColor:
+    //           ColorsClass.mainLoginScreenBackgroundColor,
+    //       systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
+    //       systemNavigationBarIconBrightness: Brightness.dark,
+    //       statusBarIconBrightness: Brightness.dark,
+    //       statusBarBrightness: Brightness.dark,
+    //     ),
+    //   );
+    // }
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle.dark.copyWith(
+        statusBarColor: Colors.transparent,
+        systemNavigationBarDividerColor:
+            ColorsClass.mainLoginScreenBackgroundColor,
+        systemNavigationBarColor: ColorsClass.mainLoginScreenBackgroundColor,
+        systemNavigationBarIconBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: Brightness.dark,
+      ),
+    );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ARTODOAPP',
