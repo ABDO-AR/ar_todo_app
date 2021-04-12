@@ -1,4 +1,6 @@
 import 'package:ar_todo_app/res/values/colors_class.dart';
+import 'package:ar_todo_app/res/values/constance_class.dart';
+import 'package:ar_todo_app/res/values/strings_class.dart';
 import 'package:ar_todo_app/res/values/values_class.dart';
 import 'package:ar_todo_app/res/widgets/ar_custom_fab.dart';
 import 'package:flutter/material.dart';
@@ -35,13 +37,35 @@ class _HomeScreenResState extends State<HomeScreenRes> {
     Size size = MediaQuery.of(context).size;
     ThemeData themeData = Theme.of(context);
     return Scaffold(
-      /// TODO: We Have To Make Custom AppBar With Preferred Size.
-      //AppBar:
-      // appBar: AppBar(
-      //   title: Text('HomeScreen'),
-      //   backgroundColor: ColorsClass.mainHomeScreenBackgroundColor,
-      //   centerTitle: true,
-      // ),
+      /// C_TODO: We Have To Make Custom AppBar With Preferred Size.
+      // AppBar:
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              color: ColorsClass.headerIconsColor,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.logout,
+              color: ColorsClass.headerIconsColor,
+            ),
+            onPressed: () {},
+          ),
+        ],
+        leading: IconButton(
+          icon: Icon(
+            Icons.menu,
+            color: ColorsClass.headerIconsColor,
+          ),
+          onPressed: () {},
+        ),
+        elevation: 0.0,
+        backgroundColor: ColorsClass.mainHomeScreenBackgroundColor,
+      ),
 
       //Body:
       body: Container(
@@ -56,10 +80,43 @@ class _HomeScreenResState extends State<HomeScreenRes> {
         ),
 
         //Child:
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${StringsClass.welcomeMassage}',
+                style: ConstanceClass.loginMassageTextStyle,
+              ),
+              SizedBox(height: 30),
+              Text(
+                StringsClass.categorisesMassage.toUpperCase(),
+                style: ConstanceClass.categorisesMassageTextStyle,
+              ),
+              SizedBox(height: 8.0),
+              SizedBox(
+                height: size.height / 5,
+                child: Expanded(
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Card(
+                        elevation: 0.9,
+                        shadowColor: Colors.black,
+                        color: ColorsClass.mainHomeScreenWidgetsColor,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text('DemoList'),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
 

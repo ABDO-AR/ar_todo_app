@@ -8,6 +8,8 @@ class StringsClass {
   static final String welcomeSignupMassage2 = 'SignUP!';
   static final String loginMassage = 'LOGIN';
   static final String signupMassage = 'SignUP';
+  static final String welcomeMassage = 'What\'s up,';
+  static final String categorisesMassage = 'Categorises';
 
   /// Hints:
   static final String userNameHint = 'UserName';

@@ -23,4 +23,7 @@ class ColorsClass {
 
   /// Task Card Color:
   static final Color taskCardColor = Color(0xFF041955);
+
+  /// Headers Icons Color:
+  static final Color headerIconsColor = Color(0xFF708CD9);
 }

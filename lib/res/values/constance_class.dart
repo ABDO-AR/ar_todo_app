@@ -1,3 +1,4 @@
+import 'package:ar_todo_app/res/values/colors_class.dart';
 import 'package:flutter/material.dart';
 
 class ConstanceClass {
@@ -21,6 +22,10 @@ class ConstanceClass {
     fontSize: 20.0,
     fontWeight: FontWeight.w900,
     color: Colors.white,
+  );
+
+  static final TextStyle categorisesMassageTextStyle = TextStyle().copyWith(
+    color: ColorsClass.headerIconsColor,
   );
 
   /// The TextFiled Label Style:
